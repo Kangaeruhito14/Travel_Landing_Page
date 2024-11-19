@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Go Trip</title>
+    <link rel="icon" href="media/travel-logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+    <!--===========Nav Bar=================-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Go Trip</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tours">Tours</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#packages">Packages</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--===============Banner with Parallax Effect================-->
+    <section id="home" class="banner text-center text-white d-flex flex-column justify-content-center align-items-center">
+        <video autoplay muted loop class="banner-video">
+            <source src="media/travelling.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="container">
+            <h1 class="display-4">Find Your Next Adventure!</h1>
+            <p class="lead">Discover beautiful places around the world with us!</p>
+            <form class="d-flex justify-content-center my-3">
+                <input type="text" list="destinations" placeholder="Where would you like to go?" class="form-control me-2">
+                <datalist id="destinations">
+                    <option>London</option>
+                    <option>Canada</option>
+                    <option>Monaco</option>
+                    <option>France</option>
+                    <option>Japan</option>
+                    <option>Switzerland</option>
+                    <option>Seoul</option>
+                </datalist>
+                <input type="date" class="form-control me-2">
+                <button class="btn btn-primary">Book Now</button>
+            </form>
+        </div>
+    </section>    
+
+    <!--=========Services Section===============-->
+    <section id="tours" class="services py-5 text-center">
+        <div class="container">
+            <h2 class="mb-5">Why Travel with Us?</h2>
+            <div class="row services">
+                <div class="col-md-3 service-item">
+                    <div class="service-image img-1 mb-3" aria-label="Local Guides"></div>
+                    <h5 class="service-title">8000+ Local Guides</h5>
+                </div>
+                <div class="col-md-3 service-item">
+                    <div class="service-image img-2 mb-3" aria-label="Trusted Agency"></div>
+                    <h5 class="service-title">100% Trusted Agency</h5>
+                </div>
+                <div class="col-md-3 service-item">
+                    <div class="service-image img-3 mb-3" aria-label="Experience"></div>
+                    <h5 class="service-title">28+ Years Experience</h5>
+                </div>
+                <div class="col-md-3 service-item">
+                    <div class="service-image img-4 mb-3" aria-label="Happy Travelers"></div>
+                    <h5 class="service-title">98% Happy Travelers</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--==============Popular Destinations===================-->
+    <section id="packages" class="places py-5 text-center">
+        <div class="container">
+            <h2 class="mb-5">Featured Tour Packages</h2>
+            <div class="carousel-wrapper">
+                <div class="carousel">
+                    <!-- Original set of cards -->
+                    <div class="card">
+                        <div class="card-img-top img-5"></div>
+                        <div class="card-body">
+                            <h5 class="card-title">Dark Forest Adventure</h5>
+                            <p class="card-text">$1870 / Per Person</p>
+                            <p><small>Vancouver, Canada | 3 Days</small></p>
+                            <div class="text">
+                                <p>Unwind with a serene mountain retreat, complete with hiking, campfires, and scenic views.</p>
+                            </div>
+                            <div class="rating">Rating: ★★★★☆</div>                            
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img-top img-6"></div>
+                        <div class="card-body">
+                            <h5 class="card-title">Paris Escapade</h5>
+                            <p class="card-text">$2200 / Per Person</p>
+                            <p><small>Paris, France | 3 Days</small></p>
+                            <div class="text">
+                                <p>Discover the romance of Paris with exclusive tours of the Eiffel Tower, art galleries, and charming cafes.</p>
+                            </div>
+                            <div class="rating">Rating: ★★★★★</div>                            
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img-top img-7"></div>
+                        <div class="card-body">
+                            <h5 class="card-title">Monaco Adventure</h5>
+                            <p class="card-text">$2500 / Per Person</p>
+                            <p><small>Monaco | 3 Days</small></p>
+                            <div class="text">
+                                <p>Explore the vibrant cityscape with guided city tours, fine dining, and historical landmarks.</p>
+                            </div>
+                            <div class="rating">Rating: ★★★☆☆</div>                            
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img-top img-8"></div>
+                        <div class="card-body">
+                            <h5 class="card-title">Tropical Paradise</h5>
+                            <p class="card-text">$3000 / Per Person</p>
+                            <p><small>Bali, Indonesia | 5 Days</small></p>
+                            <div class="text">
+                                <p>Dive into crystal-clear waters for an unforgettable snorkeling and underwater exploration experience.</p>
+                            </div>
+                            <div class="rating">Rating: ★★★★☆</div>                            
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img-top img-9"></div>
+                        <div class="card-body">
+                            <h5 class="card-title">Safari Adventure</h5>
+                            <p class="card-text">$2800 / Per Person</p>
+                            <p><small>Kenya | 4 Days</small></p>
+                            <div class="text">
+                                <p>Embark on a thrilling safari adventure, exploring wildlife and breathtaking landscapes up close.</p>
+                            </div>
+                            <div class="rating">Rating: ★★★★★</div>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>        
+    
+    <!--===========About Us===============-->
+    <section id="about" class="about py-5">
+        <div class="container d-flex align-items-center">
+            <div class="about-img img-10 me-4"></div>
+            <div class="about-text">
+                <h2>About Go Trip</h2>
+                <p>We are a reliable and experienced travel agency, dedicated to helping you discover new places and make unforgettable memories.</p>
+                <ul class="list-unstyled">
+                    <li>✓ Professional Guides</li>
+                    <li>✓ Top-notch Packages</li>
+                    <li>✓ Customer Satisfaction</li>
+                    <li>✓ 24/7 Support</li>
+                </ul>
+                <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!--===========Footer=================-->
+    <footer id="contact" class="footer py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <!-- Contact Form Section -->
+                <div class="col-md-6 mx-auto">
+                    <h5 class="mb-4 text-uppercase">Contact Us</h5>
+                    <form class="contact-form">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                    </form>
+                </div>
+            </div>
+            <p class="mt-4">&copy; 2024 Go Trip | All rights reserved.</p>
+        </div>
+    </footer>    
+
+    <!-- Bootstrap JS -->
+     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
